@@ -40,6 +40,18 @@ h3 {
   font-family: coves-bold;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 20px;
+
+}
+
+#center {
+  display: flex;
+  align-items: center;
+}
+
 .red-color {
   color: #AF231C;
 }
@@ -52,20 +64,19 @@ h3 {
   background-color: #b46a51;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  color: black;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .list-inline li {
   list-style: none;
+  text-decoration: none;
   display: inline;
-  padding: 0px 20px;
   font-size: 18px;
   font-family: vision-regular;
   /*text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);*/
 }
-.list-inline li:hover {
+
+.list-inline li a:hover {
   color: white;  /*#ba7967 */
   text-shadow: none;
 }
@@ -117,11 +128,12 @@ h3 {
   font-size: 25px;
   font-weight: bold;
   padding-left: 40px;
-
+  margin-bottom: 0px !important;
+  font-family: vision-thin;
 }
 
 #footer-impressum {
-  padding-top: 10px;
+  padding-top: 0px;
   font-weight: bold;
   font-size: 30px;
   margin: 0;
@@ -138,14 +150,14 @@ h3 {
 #kind1-impressum {
   position: absolute;
   left: 40px;
-  font-family: coves-bold;
+  font-family: vision-thin;
   font-size: 16px;
 }
 
 #kind2-impressum {
   position: absolute;
   right: 700px;
-   font-family: coves-bold;
+  font-family: vision-thin;
   font-size: 16px;
 }
 
