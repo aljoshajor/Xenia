@@ -22,7 +22,7 @@ body {
   background: rgb (250, 250, 250);
   font-family: 'vision-thin', serif;
   color: #393e46; /*cloud burst*/
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   margin: 0px;
 }
@@ -36,6 +36,7 @@ h1 {
 h2 {
   font-size: 30px;
   color: #AF231C; /* Pantone 2350 C */
+  margin-bottom: 0;
 }
 
 h3 {
@@ -43,6 +44,10 @@ h3 {
   margin: 0;
   font-weight: bold;
   font-family: coves-bold;
+}
+
+p {
+  margin-top: 0;
 }
 
 a {
@@ -57,7 +62,6 @@ a {
 
 .header-balken {
   display: flex;
-  justify-content: space-between;
   position: relative;
   /*font-weight: bold;*/
 }
@@ -69,7 +73,7 @@ a {
 
 .header-pic {
   width: 1130px;
-  height: 100px;
+  max-height: 100px;
 }
 
 .list-inline li {
@@ -93,13 +97,6 @@ a {
   color: black;
 }
 
-
-
-#center {
-  display: flex;
-  align-items: center;
-}
-
 #menue {
  /* position: absolute;
   bottom: 0;*/
@@ -120,30 +117,26 @@ a {
 }
 
 .image_circle {
-  width: 500px;
   border-radius: 50%;
   padding-top: 10px;
-  padding-right: 10px;
+/*  padding-right: 10px;*/
   padding-bottom: 10px;
-  padding-left: 10px;
+/*  padding-left: 10px;*/
   border: black;
+  display: block;
+  width: 50%;
 }
-
-/*.logo{
-  width: 210px;
-  height: 95%;
-  align-items: center;
-} */
 
 .pic_text {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-
   /*padding: 180px 0 0 0; */
 }
 
 #xenia-title {
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .container {
@@ -200,21 +193,46 @@ a {
 }
 
 @media (max-width: 960px) {
-  .container {
+  .main .header-balken {
     width: 700px;
   }
 }
 @media (max-width: 720px) {
-  .container {
+  .main .header-balken {
     width: 500px;
   }
 }
 @media (max-width: 540px) {
-  .container {
+  .main .header-balken {
     width: 300px;
+  }
+  .header-pic {
+    width: 70%;
+  }
+  .logo {
+    width: 30%;
   }
 }
 
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
+/*@media only screen and (max-width: 768px) {
+   For mobile phones:
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+*/
 
